@@ -84,3 +84,9 @@ Route::view('son','sayfa.iltisim',['ad'=>'furkan']);
 
 Route::get('/iletisim','RequestEx@iletisim');
 Route::post('/iletisim/post','RequestEx@PostIletisim')->name('iletisim.post');
+
+
+###### Validation
+
+Route::get('/kayit','ValidationEx@Index');
+Route::post('/kayit-ol','ValidationEx@IndexPost')->name('kayit.post');
