@@ -56,6 +56,7 @@ Route::get('/viewyapisi/about','viewYapisi@About')->name("about");
                
 
 //url gruplama 
+// groupdan önce ->namespace('Api\V1') sabit  controller uzantısı için 
 Route::prefix('elektronik')->group(function(){
 
     Route::get('telefon',function(){
